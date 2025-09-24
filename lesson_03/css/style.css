@@ -1,0 +1,85 @@
+@import url("reset.css");
+
+/* Звернення до тегу */
+body {
+  background-color: rgb(241, 241, 245);
+}
+
+/* Звернення до всіх об'єктів що є в html коді */
+/* * {
+  color: brown;
+} */
+
+/* селектор тегу для заголовків */
+h1,
+h2,
+h3 {
+  color: rgb(136, 0, 0);
+}
+
+/* Звертаємось до усхі тегів P на сторінці */
+p {
+  color: blueviolet;
+}
+
+/* Селектор класу */
+.future_phrase {
+  color: pink;
+}
+
+/* Селектор ID */
+#fotter_paragraph {
+  color: rgb(255, 255, 255);
+}
+
+/* Селектор атрибуту з пошуком сполучення літер в тегові a */
+[class*="iki"] {
+  color: rgba(32, 22, 22, 0.103);
+}
+
+/* вкладеність селекторів */
+.header_text .some_text {
+  color: sandybrown;
+}
+
+/* Звертаємось до усхі тегів span на сторінці */
+span {
+  color: rgb(3, 140, 231);
+}
+
+span.imp_text {
+  color: yellow;
+}
+
+/* Селектор тегу для таблиць */
+ul {
+  color: green;
+}
+
+.greats_item {
+  color: grey;
+}
+
+/* Селектор класу для для тегу посилання в навігаційній панелі*/
+a.nav_link {
+  color: rgb(255, 145, 0);
+}
+
+/* Звертаємось до тегу div який має значення ID та класс footer */
+div#down.footer {
+  background-color: black;
+}
+
+/* каскадність . звертаємось до батьківського елементу класу some_link , щоб надати css значення для дочірнього классу ftlink    */
+.some_link .ftlink {
+  color: rgb(240, 148, 148);
+}
+
+.content_box > p {
+  color: black;
+}
+
+/* Селектор Тільда оформлення останньої фрази в футері */
+.some_link ~ p {
+  color: purple;
+}
