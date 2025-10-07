@@ -1,0 +1,103 @@
+@import url("reset.css");
+@import url("fonts.css");
+/* Підключення шрифта в css з google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.WoW-logo {
+  display: block;
+  margin-inline: auto;
+  min-width: 500px;
+  height: auto;
+}
+
+.main-header {
+  text-align: center;
+  line-height: 1.7;
+}
+.fraction_logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: 0%;
+}
+
+.characters-img {
+  display: block;
+  margin-inline: auto;
+  width: 800px;
+  height: 800px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  background-color: rgba(29, 9, 145, 0.562);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", serif;
+  margin-bottom: 10px;
+  color: #fabb0f;
+  text-align: center;
+  text-shadow: 7px 3px 5px #000000;
+}
+
+.main-header {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  text-decoration: dotted underline;
+}
+
+.list-p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #133e69;
+}
+
+.alliance,
+.horde {
+  font-family: "FloralCapsNouveau", fantasy;
+  font-weight: 700;
+  color: #fabb0f;
+  text-decoration: underline;
+}
+
+.example-p {
+  letter-spacing: 5px;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.footer-container {
+  font-family: "FloralCapsNouveau", fantasy;
+  padding: 10px 0;
+  background-color: #0000007a;
+  color: #fabb0f;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-text .some {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+/* Підключення стороннього шрифту в форматі woff2 */
+@font-face {
+  font-family: "FloralCapsNouveau";
+  src: url(../fonts/FloralCapsNouveau.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
