@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;700&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pixelify%20Sans:wght@400;700&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" href="css/style.css">
+		<title>Homework nr7</title>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="main-header">Homework nr7</h1>
+			<nav class="main-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link" target="_blank">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="layout.html" class="nav-link" target="_blank">List
+						</a></li>
+					<li class="nav-item">
+						<a href="game.html" class="nav-link" target="_blank">
+							<img src="img/pac-man.jpg" alt="pac-man">
+						</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+
+			<div class="main-block">
+
+				<section class="pseudo-classes">
+
+					<h2 class="section-title">Псевдокласи</h2>
+
+					<div class="practic">
+						<h3>:hover</h3>
+						<p>Псевдоклас :hover — звернення до елемента у стані
+							"при наведенні миші".</p>
+						<a class="link-hover" href="#" title="button">Click Me</a>
+					</div>
+
+					<div class="practic">
+						<h3>:active</h3>
+						<p>Псевдоклас :active — звернення до елемента в активному стані
+							"при натиснутій клавіші миші"</p>
+						<a class="link-active" href="#" title="button">Click Me</a>
+					</div>
+
+					<div class="practic">
+						<h3>:visited</h3>
+						<p>Псевдоклас :visited — звернення до елемента у стані
+							"відвіданого посилання"</p>
+						<a class="link-visited" href="https://www.google.com/" title="button"
+							target="_blank">Click Me</a>
+					</div>
+
+					<div class="practic">
+						<h3>:focus</h3>
+						<p>Псевдоклас :focus — звернення до елементу у стані "фокусу"</p>
+						<a class="link-focus" href="#" title="button">Focus Me</a>
+						<a class="link-focus-visible" href="#" title="button">Focus Visible</a>
+					</div>
+
+					<div class="practic">
+						<h3>:target</h3>
+						<p>Псевдоклас :target — звернення до елемента у стані
+							"ефекту від посилання з іншого об'єкту"</p>
+						<a class="link-target" href="#target" title="button">Click Me</a>
+						<div class="practic-box" id="target">Here we go</div>
+					</div>
+
+					<div class="practic">
+						<h3>:first-child</h3>
+						<p>Псевдоклас :first-child — звернення до першого елементу в коді</p>
+						<div class="child-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:first-of-type</h3>
+						<p>Псевдоклас :first-of-type — звернення до першого вказаного об'єкту в
+							коді </p>
+						<div class="type-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+
+						<div class="type-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:last-child</h3>
+						<p>Псевдоклас :last-child — звернення до останнього елементу в коді</p>
+						<div class="last-child-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:last-of-type</h3>
+						<p>Псевдоклас :last-of-type — звернення до останнього вказаного об'єкту в
+							коді</p>
+						<div class="last-type-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+
+						<div class="last-type-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:nth-child()</h3>
+						<p>Псевдоклас :nth-child() — звернення до конкретного елементу в коді:</p>
+						<ul class="nth-list">
+							<li>odd — не парні;</li>
+							<li>even - парні.</li>
+						</ul>
+						<div class="nth-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:not()</h3>
+						<p>Псевдоклас :not() — псевдоклас виключення (для всіх, окрім…).</p>
+						<div class="not-block">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+					</div>
+
+					<div class="practic">
+						<h3>:has()</h3>
+						<p>Псевдоклас :has() - псевдоклас присутності в коді </p>
+						<div class="has-block">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et,tempora rem? Odit
+								doloribus
+								aut, sed ex
+								quisquam soluta amet sunt itaque?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et,tempora rem? Odit
+								doloribus
+								aut, sed ex
+								quisquam soluta amet sunt itaque?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et,tempora rem? Odit
+								doloribus
+								aut, sed ex
+								quisquam soluta amet sunt itaque?</p>
+						</div>
+
+						<div class="has-block">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et,<span>tempora rem?
+									Odit doloribus
+									aut</span>, sed ex
+								quisquam soluta amet sunt itaque?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et, <span>tempora rem?
+									Odit doloribus
+									aut</span>, sed ex
+								quisquam soluta amet sunt itaque?</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+								molestiae quae
+								consequatur rerum odit delectus repellat magni et,<span>tempora rem?
+									Odit doloribus
+									aut</span>, sed ex
+								quisquam soluta amet sunt itaque?</p>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="pseudo-elements">
+
+					<h2 class="section-title">Псевдоелементи</h2>
+					<div class="practic">
+						<h3>::before{}</h3>
+						<p>::before — це псевдоелемент, який дозволяє додати вміст перед елементом
+							(але всередині нього у
+							HTML-структурі).</p>
+
+						<ul class="before-list">
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+						</ul>
+
+					</div>
+
+					<div class="practic">
+						<h3>::after{}</h3>
+						<p>::after — це псевдоелемент, який додає вміст після елемента (всередині
+							нього, але після основного
+							контенту).</p>
+
+						<ul class="after-list">
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+							<li>Пункт списку</li>
+						</ul>
+					</div>
+
+				</section>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+
+</html>

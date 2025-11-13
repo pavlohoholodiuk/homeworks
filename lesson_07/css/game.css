@@ -1,0 +1,180 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 58px;
+  padding: 50px 0px;
+}
+
+.game-box {
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.game-info {
+  margin-bottom: 30px;
+}
+
+.button {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.game-controls .button:first-of-type {
+  margin-right: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgba(57, 66, 100, 1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.wrapper {
+  max-width: 768px;
+  min-height: 768px;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.game {
+  position: relative;
+  background-image: url("../img/game.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 768px;
+  height: 768px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+#game-area:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.game > div {
+  position: absolute;
+}
+
+.start {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(156, 156, 0, 0);
+  border-radius: 50%;
+  margin-top: 290px;
+  margin-left: 70px;
+}
+
+.one {
+  width: 80px;
+  height: 20px;
+  background-color: yellow;
+  margin-top: 330px;
+  margin-left: 120px;
+}
+
+.two {
+  width: 20px;
+  height: 290px;
+  background-color: yellow;
+  margin-top: 330px;
+  margin-left: 195px;
+}
+
+.three {
+  width: 100px;
+  height: 20px;
+  background-color: yellow;
+  margin-top: 600px;
+  margin-left: 195px;
+}
+
+.four {
+  width: 20px;
+  height: 70px;
+  background-color: yellow;
+  margin-top: 550px;
+  margin-left: 275px;
+}
+
+.five {
+  width: 220px;
+  height: 20px;
+  background-color: yellow;
+  margin-top: 550px;
+  margin-left: 275px;
+}
+
+.six {
+  width: 20px;
+  height: 75px;
+  background-color: yellow;
+  margin-top: 550px;
+  margin-left: 475px;
+}
+
+.seven {
+  width: 95px;
+  height: 20px;
+  background-color: yellow;
+  margin-top: 605px;
+  margin-left: 475px;
+}
+
+.eight {
+  width: 20px;
+  height: 295px;
+  background-color: yellow;
+  margin-top: 330px;
+  margin-left: 550px;
+}
+
+.nine {
+  width: 140px;
+  height: 20px;
+  background-color: yellow;
+  margin-top: 330px;
+  margin-left: 550px;
+}
+
+.finish {
+  width: 70px;
+  height: 40px;
+  background-color: yellow;
+  margin-top: 320px;
+  margin-left: 670px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+
+.pac-man:not(.start) {
+  visibility: hidden;
+}
+
+.pac-man:hover + .pac-man,
+.pac-man:hover {
+  visibility: visible;
+  cursor: pointer;
+}
