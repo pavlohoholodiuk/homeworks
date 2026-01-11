@@ -1,0 +1,73 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Підключення шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair%20Display:wght@400&display=swap"); */
+
+/* Основні стилі */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #333;
+	color: #fff;
+
+	padding: 30px;
+}
+
+/* БЕМ-блок */
+/* заборонено впливати на оточення */
+.section-header {
+	/* Так не можна робити, вплаває на інші об'єкти */
+	/* margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px; */
+}
+
+/* БЕМ-модифікатор */
+/* можна */
+.section-header--margin {
+	margin-bottom: 50px;
+}
+
+.item-gallery {
+	/* заборонено */
+	/* margin-bottom: 20px; */
+}
+.gallery__item {
+	margin-bottom: 30px;
+}
+.news__item {
+	margin-bottom: 20px;
+}
+
+/*  */
+
+.about__container,
+.services__container
+/* .... */ {
+	/* max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px; */
+}
+
+/* .container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+} */
+
+/* Селектор атрибуту */
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
